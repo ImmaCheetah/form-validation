@@ -6,6 +6,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
-    <div class="container"></div>
+    <div class="container">
+      <form id="main-form" name="main-form" action="" method="POST" novalidate>
+        <div class="form-header">
+            <h3 class="form-title">Form</h3>
+        </div>
+        <div id="form-email-div" class="form-div">
+            <label for="form-email"></label>
+            <input type="email" name="form-email" id="form-email" placeholder="Email" minlength="2" required>
+            <span class="error"></span>
+        </div>
+        <div id="form-country-div" class="form-div">
+            <label for="form-country"></label>
+            <select name="form-country" id="form-country">
+              <option value="ca">Canada</option>
+              <option value="us">USA</option>
+              <option value="br">Brazil</option>
+              <option value="sk">South Korea</option>
+            </select>
+            <span class="error"></span>
+        </div>
+        <div id="form-zip-div" class="form-div">
+            <label for="form-zip"></label>
+            <input type="text" name="form-zip" id="form-zip" placeholder="ZIP" required>
+            <span class="error"></span>
+        </div>
+        <div id="form-pwd-div" class="form-div">
+            <label for="form-pwd">Password</label>
+            <input type="text" name="form-pwd" id="form-pwd">
+            <span></span>
+        </div>
+        <div id="form-pwd-confrim-div" class="form-div">
+          <label for="form-pwd-confirm">Confirm Password</label>
+          <input type="text" name="form-pwd-confirm" id="form-pwd-confirm">
+          <span></span>
+      </div>
+        <div id="submit-div" class="form-div">
+            <button id="submit-btn" type="submit">Submit</button>
+        </div>
+    </form>
+    </div>
   </body>
 </html>
