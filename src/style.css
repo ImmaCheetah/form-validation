@@ -1,3 +1,27 @@
-.hello {
-  color: red;
+#main-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
+
+.error {
+  color: rgb(241, 98, 98);
+}
+
+.error.active {
+  background-color: rgb(97, 97, 97);
+}
+
+input {
+  appearance: none;
+  border: 1px solid gray;
+}
+
+input:valid {
+  border-color: greenyellow;
+}
+
+input:invalid {
+  border-color: red;
+}
+
