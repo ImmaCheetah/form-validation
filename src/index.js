@@ -75,20 +75,10 @@ function showEmailError() {
   } else if (email.validity.typeMismatch) {
     emailError.textContent = `That's not email format`;
   }
-//   emailError.className = "error active";
 }
 
 form.addEventListener("submit", (e) => {
 
-    // if (!email.validity.valid) {
-    //     showEmailError();
-    // } else if (!ZIPCode.validity.valid) {
-    //     checkZIP();
-    // } else if (!pwd.validity.valid) {
-    //     checkPwd();
-    // } else if (!pwdConfirm.validity.valid) {
-    //     checkPwdConfirm();
-    // }
     if (!form.checkValidity()) {
         showEmailError();
         checkZIP();
