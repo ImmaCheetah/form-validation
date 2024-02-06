@@ -1,4 +1,3 @@
-import { container } from "webpack";
 import "./style.css";
 
 function checkZIP() {
@@ -96,11 +95,12 @@ form.addEventListener("submit", (e) => {
         checkPwd();
         checkPwdConfirm();
     } else {
-        // const message = document.createElement('h1');
-        // const container = document.querySelector('.container');
-        // message.textContent = 'Good job';
+        const message = document.createElement('h1');
+        const container = document.querySelector('.container');
+        container.textContent = '';
+        message.textContent = 'Good job';
 
-        // container.appendChild(message);
+        container.appendChild(message);
     }
     
     e.preventDefault();
